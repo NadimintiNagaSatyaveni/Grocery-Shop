@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('45.jpg') no-repeat;
+	background-size: cover;
+	font-family: Arial;
+	color: white;
+}
+ul{
+	width:100px;
+	list-style: none;
+	transform: translate(15%, 0%);
+  }
+ul li{
+	float: left;
+	width: 160px;
+	height: 65px;
+	background-color: #000000;
+	opacity: .9; 
+	line-height: 65px;
+	text-align: center;
+	font-size: 15px;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul li a:hover{
+	background-color:grey;
+	color: black;
+}
+ul li ul li{
+	display: none;
+}
+ul li:hover ul li{
+	display: block;
+
+}
+
+.navbar {
+  width: 100px; 
+  overflow: auto;
+  height:80px;
+}
+
+.logo{
+	height: 65px;
+	width: 160px;
+}
+.input-group{
+		width: 320px;
+		height: 340px;
+		background: rgb(0, 0, 0, 0.8);
+		color: #fff;
+		top: 60%;
+		left: 50%;
+		position:absolute;
+		transform: translate(-50%, -50%);
+		box-sizing: border-box;
+		padding: 70px 30px;
+ }
+ .avatar{
+	 width: 100px;
+	 height: 100px;
+	 border-radius: 50%;
+	 position: absolute;
+	 top: -50px;
+	 left: calc(50% - 50px);
+ }
+ h1{
+	 margin: 0;
+	 padding: 0 0 20px;
+	 text-align: center;
+	 font-size: 22px;
+ }
+ .input-group p{
+	 margin: 0;
+	 padding: 0;
+	 font-weight: bold;
+ }
+ .input-group input{
+	 width:100%;
+	 margin-bottom:20px;
+ }
+ .input-group input[type="text"], input[type="password"]
+ {
+	 border: none;
+	 border-bottom: 1px solid #fff;
+	 background: transparent;
+	 outline: none;
+	 height: 40px;
+	 color: #fff;
+	 font-size: 16px;
+	 
+ }
+ .input-group input[type="submit"]
+ {
+	 border: none;
+	 outline: none;
+	 height: 50px;
+	 background: #1c8adb;
+	 color: #fff;
+	 font-size: 18px;
+	 border-radius: 20px;
+ }
+ .input-group input[type="submit"]:hover
+ {
+	 cursor: pointer;
+	 color: #000;
+ }
+
+ </style>
+</head>
+
+	<body>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<ul>
+		<li><img class="logo" src="11.png"></li>
+		<li><a href="home.html">&nbsp;Home</a></li>
+		<li><a href="shop.html">&nbsp;Shop</a>
+		<ul>
+			<li><a href="veg.html">&nbsp;Vegetables</a></li>
+			<li><a href="fruit.html">&nbsp;Fruits</a></li>
+			<li><a href="grocery.html">&nbsp;Grocery</a></li>
+		</ul></li>
+		<li><a href="about.html">&nbsp;About</a></li>
+		<li><a href="contact.html">&nbsp;Contact</a></li>
+		<li><a>&nbsp;Account</a>
+			<ul>
+			<li><a href="signin.html">&nbsp;Signin</a></li>
+			<li><a href="signup.html">&nbsp;Signup</a></li>
+			
+			</ul></li>
+		</ul>
+		<br>
+	
+	<form method="post">
+  	<div class="input-group">
+	<img src="icon.jpg" class="avatar">
+	
+		<h1><i><b>Login</b></i></h1>
+			
+			<input type="text" name="username" placeholder="Enter Username">
+			
+			<input type="password" name="password" placeholder="Enter Password"><br>
+			<input type="submit" class="btn" name="login_user" value="Login"></a>
+
+			</form>
+	</div>
+	
+	</body>
+</html>

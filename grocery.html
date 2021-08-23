@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('24.jpg') no-repeat;
+	background-size: cover;
+	}
+* {
+  box-sizing: border-box;
+}
+h2{
+	font-style: italic;
+	font-size: 50px;
+	color: white;
+font-family:"Roboto";
+ text-decoration:underline;
+}
+h2:hover{
+	color:orange;
+}
+p{
+	font-size: 40px;
+	color: white;
+	font-family:"caveat";
+}
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 40px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius:10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+a{
+	text-decoration:none;
+}
+</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<a href="index.html"><h2 style="text-align:center">Grocery Store</h2></a>
+<p style="text-align:center">Grocery Items</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Bread</li>
+	<li class="img-box"><img width="300px" height="400px" src="19.jpg"></li>
+    <li class="grey">15Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">Milk</li>
+  <li class="img-box"><img width="300px" height="400px" src="42.jpg"></li>
+    <li class="grey">99Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Meat</li>
+	<li class="img-box"><img width="300px" height="400px" src="20.jpg"></li>
+    <li class="grey">100Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Horlicks and boost</li>
+	<li class="img-box"><img width="300px" height="400px" src="43.jpg"></li>
+    <li class="grey">49.99Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">Oils</li>
+	<li class="img-box"><img width="300px" height="400px" src="21.jpg"></li>
+    <li class="grey">80Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Cereals</li>
+	<li class="img-box"><img width="300px" height="400px" src="22.jpg"></li>
+    <li class="grey">50Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">Chocolates</li>
+  <li class="img-box"><img width="300px" height="400px" src="44.jpg"></li>
+    <li class="grey">150Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Soup</li>
+	<li class="img-box"><img width="300px" height="400px" src="23.jpg"></li>
+    <li class="grey">30Rs</li>    
+    <li class="grey"><a href="#" class="button">shop</a></li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">Pastha</li>
+  <li class="img-box"><img width="300px" height="400px" src="27.jpg"></li>
+    <li class="grey">49.99Rs</li>    
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+</body>
+</html>

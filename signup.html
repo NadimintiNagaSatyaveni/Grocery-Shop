@@ -1,0 +1,202 @@
+
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background:url(45.jpg);
+	background-size:cover;
+	font-family:Arial;
+}
+ul{
+	width:100px;
+	list-style: none;
+	transform: translate(15%, 0%);
+  }
+ul li{
+	float: left;
+	width: 160px;
+	height: 65px;
+	background-color: #000000;
+	opacity: .9; 
+	line-height: 65px;
+	text-align: center;
+	font-size: 15px;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul li a:hover{
+	background-color:grey;
+	color: black;
+}
+ul li ul li{
+	display: none;
+}
+ul li:hover ul li{
+	display: block;
+
+}
+
+.navbar {
+  width: 100px; 
+  overflow: auto;
+  height:80px;
+}
+
+.logo{
+	height: 65px;
+	width: 160px;
+}
+.input-group{
+		width: 320px;
+		height: 340px;
+		background: rgb(0, 0, 0, 0.8);
+		color: #fff;
+		top: 60%;
+		left: 50%;
+		position:absolute;
+		transform: translate(-50%, -50%);
+		box-sizing: border-box;
+		padding: 70px 30px;
+ }
+ .avatar{
+	 width: 100px;
+	 height: 100px;
+	 border-radius: 50%;
+	 position: absolute;
+	 top: -50px;
+	 left: calc(50% - 50px);
+ }
+ h1{
+	 margin: 0;
+	 padding: 0 0 20px;
+	 text-align: center;
+	 font-size: 22px;
+ }
+
+.wrap{
+	max-width:350px;
+	border-radius:20px;
+	margin:auto;
+	background:rgba(0,0,0,0.9);
+	box-sizing:border-box;
+	padding:40px;
+	color:#fff;
+	margin-top:100px;
+}
+h2{
+	text-align:center;
+	
+}
+input[type=text],input[type=password],input[type=tel],input[type=date]{
+	width:100%;
+	box-sizing:border-box;
+	padding:12px 5px;
+	background:rgba(0,0,0,0.0);
+	outline:none;
+	border:none;
+	border-bottom:1px dotted #fff;
+	color:#fff;
+	border-radius:5px;
+	margin:5px;
+	
+}
+select{
+	width:100%;
+	box-sizing:border-box;
+	padding:12px 5px;
+	background:rgba(0,0,0,0.0);
+	outline:none;
+	border:none;
+	border-bottom:1px dotted #fff;
+	color:white;
+	border-radius:5px;
+	margin:5px;
+	
+	
+}
+
+input[type=submit]{
+	width:100%;
+	box-sizing:border-box;
+	padding:10px 0;
+	margin-top:30px;
+	outline:none;
+	border:none;
+	background:#60adde;
+	opacity:0.7;
+	border-radius:20px;
+	font-size:20px;
+	color:#fff;
+}
+input[type=submit]:hover{
+	background:#003366;
+	opacity:0.7;
+}
+.error{
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 5px;
+	text-align: left;
+}
+option{
+	color:black;
+}
+
+
+
+</style>
+<title>sign up</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul>
+		<li><img class="logo" src="11.png"></li>
+		<li><a href="index.html">&nbsp;Home</a></li>
+		<li><a href="shop.html">&nbsp;Shop</a>
+		<ul>
+			<li><a href="veg.html">&nbsp;Vegetables</a></li>
+			<li><a href="fruit.html">&nbsp;Fruits</a></li>
+			<li><a href="grocery.html">&nbsp;Grocery</a></li>
+		</ul></li>
+		<li><a href="about.html">&nbsp;About</a></li>
+		<li><a href="contact.html">&nbsp;Contact</a></li>
+		<li><a>&nbsp;Account</a>
+			<ul>
+			<li><a href="signin.html">&nbsp;Signin</a></li>
+			<li><a href="signup.html">&nbsp;Signup</a></li>
+			
+			</ul></li>
+		</ul>
+		<br>
+
+<form method="post">	
+<div class="wrap">
+
+		<h2><i>Signup</i></h2>
+ 	
+	
+	<input type="text" name="username" placeholder="Username" >
+		<input type="password" name="password_1" placeholder="Password" >
+		<input type="password" name="password_2" placeholder="re-enter password">
+		
+		
+		
+		
+		<input type="submit" class="btn" name="submit">
+		
+	</form>
+</div>
+	
+	
+</body>
+</html>
